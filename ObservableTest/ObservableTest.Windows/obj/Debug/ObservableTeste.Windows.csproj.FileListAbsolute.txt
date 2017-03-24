@@ -1,0 +1,11 @@
+C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTeste.Win81\ObservableTeste.Win81.Windows\obj\Debug\ObservableTeste.Windows.csprojResolveAssemblyReference.cache
+C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTeste.Win81\ObservableTeste.Win81.Windows\obj\Debug\App.g.i.cs
+C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTeste.Win81\ObservableTeste.Win81.Windows\obj\Debug\App.g.cs
+C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTeste.Win81\ObservableTeste.Win81.Windows\obj\Debug\MainPage.g.i.cs
+C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTeste.Win81\ObservableTeste.Win81.Windows\obj\Debug\MainPage.g.cs
+C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTeste.Win81\ObservableTeste.Win81.Windows\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTeste.Win81\ObservableTeste.Win81.Windows\obj\Debug\XamlSaveStateFile.xml
+C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTeste.Win81\ObservableTeste.Win81.Windows\obj\Debug\App.xaml
+C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTeste.Win81\ObservableTeste.Win81.Windows\obj\Debug\MainPage.xaml
+C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTeste.Win81\ObservableTeste.Win81.Windows\obj\Debug\App.xbf
+C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTeste.Win81\ObservableTeste.Win81.Windows\obj\Debug\MainPage.xbf

@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ObservableTest.PerfilView"
+             BackgroundColor="Silver"
+             Title="perfil">
+    
+    <ContentPage.Content>
+        <ScrollView>
+            <!--<StackLayout>
+
+                <Label Text="meu perfil" FontSize="Large"/>
+
+                <Label Text="Nome" FontSize="Default"/>
+                <Entry Text="{Binding Nome}" />
+
+                <Label Text="Nome arquivo avatar" FontSize="Default"/>
+                <Entry Text="{Binding AvatarResource}" />
+
+                <Button Text="Salvar" Clicked="Salvar_Clicked" />
+            </StackLayout>-->
+
+            <RelativeLayout Margin="0" BackgroundColor="Lime">
+                <Entry Text="{Binding AvatarResource}"
+                       BackgroundColor="Red"
+                        RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Factor=0.2, Property=Width}" 
+                        RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Factor=0.567, Property=Height }" />
+                <Image x:Name="capa" 
+                       Source="gradiente.png"
+                       Aspect="Fill"
+                       BackgroundColor="Aqua"
+                       RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Factor=0.33, Property=Height}" 
+                       RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"  />
+                <Button x:Name="borda"  
+                        BorderRadius="0"
+                        BackgroundColor="Gray" 
+                        RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Factor=0.45, Property=Width}" 
+                        RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Factor=0.45, Property=Width}" 
+                        RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Factor=0.275, Property=Width}" 
+                        RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=capa, Factor=0.567, Property=Height }" />
+                <Image Source="{Binding AvatarResource}"
+                       x:Name="avatarImage"
+                       Aspect="Fill"
+                       BackgroundColor="White" 
+                       RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToView, ElementName=borda, Factor=0.85, Property=Height}" 
+                       RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToView, ElementName=borda, Factor=0.85, Property=Width}" 
+                       RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView, ElementName=borda, Factor=1.125, Property=X}" 
+                       RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=borda, ElementName=borda, Factor=1.13, Property=Y }" >
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnAvatarImageTapped" NumberOfTapsRequired="1" />
+                    </Image.GestureRecognizers>
+                </Image>
+            </RelativeLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
