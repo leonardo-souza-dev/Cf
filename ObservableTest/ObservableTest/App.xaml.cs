@@ -1,4 +1,6 @@
-﻿using ObservableTest.ViewModel;
+﻿using ObservableTest.Data;
+using ObservableTest.Model;
+using ObservableTest.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,8 +12,7 @@ namespace ObservableTest
 {
     public partial class App : Application
     {
-        public static PostViewModel PostVM { get; set; }
-        public static UsuarioViewModel UsuarioVM { get; set; }
+        static ObservableTestDatabase database;
 
         public App()
         {
@@ -21,6 +22,35 @@ namespace ObservableTest
             PostVM = new PostViewModel();
 
             MainPage = new TabHost();
+        }
+
+        public static PostViewModel PostVM { get; set; }
+        public static UsuarioViewModel UsuarioVM { get; set; }
+
+        public static ObservableTestDatabase Database
+        {
+            get
+            {
+                if (database == null)
+                {
+                    database = new ObservableTestDatabase(DependencyService.Get<IFileHelper>().GetLocalFilePath("ObservableTestSQLite.db3"));
+                }
+                return database;
+            }
+        }
+
+
+        static UsuarioModel usuarioModel;
+        public static UsuarioModel UsuarioModel
+        {
+            get
+            {
+                if (usuarioModel == null)
+                {
+                    usuarioModel = new UsuarioModel();
+                }
+                return usuarioModel;
+            }
         }
 
         protected override void OnStart()

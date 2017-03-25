@@ -11,26 +11,25 @@ namespace ObservableTest.ViewModel
 {
     public class UsuarioViewModel : INotifyPropertyChanged
     {
+        public UsuarioViewModel() { }
+
+        
+        #region Propriedades
+
+        public int Id { get; set; }
+        public string Nome { get; set; }
+        public object AvatarResource { get; set; }
+        public bool EditouAvatar { get; set; }
+
         public UsuarioModel Usuario
         {
             get
             {
-                return usuario;
-            }
-            set
-            {
-                usuario = value;
-                OnPropertyChanged("Usuario");
+                return App.Database.GetItemAsync(1).Result;
             }
         }
-        private UsuarioModel usuario;
 
-
-
-
-        public bool EditouAvatar { get; set; }
-
-
+        #endregion
 
 
         public event PropertyChangedEventHandler PropertyChanged;

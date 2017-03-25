@@ -15,7 +15,7 @@ namespace ObservableTest
             InitializeComponent();
 
             //MOCK DE DADOS
-            App.UsuarioVM.Usuario = new UsuarioModel("Gilberto", "http://www.idosodepirai.com.br/resources/3x4%20gilberto.jpg");
+            // App.UsuarioVM.Usuario.Get(1);
 
             App.PostVM.CarregarPosts();
 

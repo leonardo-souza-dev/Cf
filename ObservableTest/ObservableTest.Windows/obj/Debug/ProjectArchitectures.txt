@@ -1,2 +1,2 @@
-C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTest\ObservableTest.Windows\ObservableTest.Windows.csproj;neutral
-C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTest\ObservableTest\ObservableTest.csproj;neutral
+E:\Projects\!Xamarin\XamarinObservableTest\ObservableTest\ObservableTest.Windows\ObservableTest.Windows.csproj;neutral
+E:\Projects\!Xamarin\XamarinObservableTest\ObservableTest\ObservableTest\ObservableTest.csproj;neutral

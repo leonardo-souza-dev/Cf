@@ -1,0 +1,2 @@
+E:\Projects\!Xamarin\XamarinObservableTest\ObservableTest\ObservableTest.Windows\ObservableTest.Windows.csproj;x64
+E:\Projects\!Xamarin\XamarinObservableTest\ObservableTest\ObservableTest\ObservableTest.csproj;neutral

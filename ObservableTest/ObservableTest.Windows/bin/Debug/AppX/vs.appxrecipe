@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>DESKTOP-3GERM15</Machine>
-    <WindowsUser>leona</WindowsUser>
+    <Machine>VAVA-PC</Machine>
+    <WindowsUser>vava</WindowsUser>
     <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
     <TargetOsVersion>6.3</TargetOsVersion>
     <TargetOsDescription>Windows 8.1</TargetOsDescription>
@@ -10,13 +10,13 @@
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>277c7193-3404-4fbf-b556-45b4b5b49f29</PackageIdentityName>
     <PackageIdentityPublisher>CN=leona</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTest\ObservableTest.Windows\obj\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>E:\Projects\!Xamarin\XamarinObservableTest\ObservableTest\ObservableTest.Windows\obj\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
-    <RegisteredManifestChecksum>2C9DB3DBB82C9E6391B529D37105191E68FD44D12A3A4DF637F2BC79B9767397</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>D950E916556DA9A2ACE745D8EF84E90A4AF3C6A6BBB481B85EA666619AA5C57D</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>277c7193-3404-4fbf-b556-45b4b5b49f29_1.0.0.0_neutral__tvvg2v4s3vv0g</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>277c7193-3404-4fbf-b556-45b4b5b49f29_tvvg2v4s3vv0g!App</RegisteredUserModeAppID>
     <RegisteredPackageID>277c7193-3404-4fbf-b556-45b4b5b49f29</RegisteredPackageID>
@@ -25,121 +25,145 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTest\ObservableTest.Windows\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="E:\Projects\!Xamarin\XamarinObservableTest\ObservableTest\ObservableTest.Windows\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-03-24T21:47:51.786</Modified>
+      <Modified>2017-03-25T16:53:09.392</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTest\ObservableTest.Windows\bin\Debug\ObservableTest.Windows.exe">
+    <AppxPackagedFile Include="E:\Projects\!Xamarin\XamarinObservableTest\ObservableTest\ObservableTest.Windows\bin\Debug\ObservableTest.Windows.exe">
       <PackagePath>ObservableTest.Windows.exe</PackagePath>
-      <Modified>2017-03-24T22:07:57.173</Modified>
+      <Modified>2017-03-25T16:53:08.232</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTest\ObservableTest\bin\Debug\ObservableTest.dll">
+    <AppxPackagedFile Include="E:\Projects\!Xamarin\XamarinObservableTest\ObservableTest\ObservableTest\bin\Debug\ObservableTest.dll">
       <PackagePath>ObservableTest.dll</PackagePath>
-      <Modified>2017-03-24T22:07:56.388</Modified>
+      <Modified>2017-03-25T16:53:06.624</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\packages\Xam.Plugin.Media.2.6.2\lib\win8\Plugin.Media.Abstractions.dll">
+    <AppxPackagedFile Include="E:\Projects\!Xamarin\XamarinObservableTest\packages\Xam.Plugin.Media.2.6.2\lib\win8\Plugin.Media.Abstractions.dll">
       <PackagePath>Plugin.Media.Abstractions.dll</PackagePath>
-      <Modified>2017-01-06T23:20:54.000</Modified>
+      <Modified>2017-03-25T05:09:34.354</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\packages\Xam.Plugin.Media.2.6.2\lib\win8\Plugin.Media.dll">
+    <AppxPackagedFile Include="E:\Projects\!Xamarin\XamarinObservableTest\packages\Xam.Plugin.Media.2.6.2\lib\win8\Plugin.Media.dll">
       <PackagePath>Plugin.Media.dll</PackagePath>
-      <Modified>2017-01-06T23:20:54.000</Modified>
+      <Modified>2017-03-25T05:09:34.417</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\packages\Xamarin.Forms.2.2.0.31\lib\win81\Xamarin.Forms.Core.dll">
+    <AppxPackagedFile Include="E:\Projects\!Xamarin\XamarinObservableTest\packages\sqlite-net-pcl.1.3.1\lib\netstandard1.1\SQLite-net.dll">
+      <PackagePath>SQLite-net.dll</PackagePath>
+      <Modified>2017-01-16T14:56:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\!Xamarin\XamarinObservableTest\packages\SQLitePCLRaw.bundle_green.1.1.2\lib\win81\SQLitePCLRaw.batteries_green.dll">
+      <PackagePath>SQLitePCLRaw.batteries_green.dll</PackagePath>
+      <Modified>2017-01-04T11:54:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\!Xamarin\XamarinObservableTest\packages\SQLitePCLRaw.bundle_green.1.1.2\lib\win81\SQLitePCLRaw.batteries_v2.dll">
+      <PackagePath>SQLitePCLRaw.batteries_v2.dll</PackagePath>
+      <Modified>2017-01-04T11:54:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\!Xamarin\XamarinObservableTest\packages\SQLitePCLRaw.core.1.1.2\lib\win81\SQLitePCLRaw.core.dll">
+      <PackagePath>SQLitePCLRaw.core.dll</PackagePath>
+      <Modified>2017-01-04T11:54:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\!Xamarin\XamarinObservableTest\packages\SQLitePCLRaw.provider.e_sqlite3.win81.1.1.2\lib\win81\SQLitePCLRaw.provider.e_sqlite3.dll">
+      <PackagePath>SQLitePCLRaw.provider.e_sqlite3.dll</PackagePath>
+      <Modified>2017-01-04T11:54:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\!Xamarin\XamarinObservableTest\packages\System.Runtime.InteropServices.RuntimeInformation.4.0.0\lib\win8\System.Runtime.InteropServices.RuntimeInformation.dll">
+      <PackagePath>System.Runtime.InteropServices.RuntimeInformation.dll</PackagePath>
+      <Modified>2017-03-25T05:09:24.651</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\!Xamarin\XamarinObservableTest\packages\Xamarin.Forms.2.2.0.31\lib\win81\Xamarin.Forms.Core.dll">
       <PackagePath>Xamarin.Forms.Core.dll</PackagePath>
-      <Modified>2016-04-26T22:42:52.000</Modified>
+      <Modified>2017-03-25T05:09:40.588</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\packages\Xamarin.Forms.2.2.0.31\lib\win81\Xamarin.Forms.Platform.dll">
+    <AppxPackagedFile Include="E:\Projects\!Xamarin\XamarinObservableTest\packages\Xamarin.Forms.2.2.0.31\lib\win81\Xamarin.Forms.Platform.dll">
       <PackagePath>Xamarin.Forms.Platform.dll</PackagePath>
-      <Modified>2016-04-26T22:42:52.000</Modified>
+      <Modified>2017-03-25T05:09:41.057</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\packages\Xamarin.Forms.2.2.0.31\lib\win81\Xamarin.Forms.Platform.WinRT.dll">
+    <AppxPackagedFile Include="E:\Projects\!Xamarin\XamarinObservableTest\packages\Xamarin.Forms.2.2.0.31\lib\win81\Xamarin.Forms.Platform.WinRT.dll">
       <PackagePath>Xamarin.Forms.Platform.WinRT.dll</PackagePath>
-      <Modified>2016-04-26T22:42:52.000</Modified>
+      <Modified>2017-03-25T05:09:41.025</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\packages\Xamarin.Forms.2.2.0.31\lib\win81\Xamarin.Forms.Platform.WinRT.Tablet.dll">
+    <AppxPackagedFile Include="E:\Projects\!Xamarin\XamarinObservableTest\packages\Xamarin.Forms.2.2.0.31\lib\win81\Xamarin.Forms.Platform.WinRT.Tablet.dll">
       <PackagePath>Xamarin.Forms.Platform.WinRT.Tablet.dll</PackagePath>
-      <Modified>2016-04-26T22:42:52.000</Modified>
+      <Modified>2017-03-25T05:09:40.869</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\packages\Xamarin.Forms.2.2.0.31\lib\win81\Xamarin.Forms.Xaml.dll">
+    <AppxPackagedFile Include="E:\Projects\!Xamarin\XamarinObservableTest\packages\Xamarin.Forms.2.2.0.31\lib\win81\Xamarin.Forms.Xaml.dll">
       <PackagePath>Xamarin.Forms.Xaml.dll</PackagePath>
-      <Modified>2016-04-26T22:42:52.000</Modified>
+      <Modified>2017-03-25T05:09:41.104</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTest\ObservableTest.Windows\Assets\gradiente.png">
+    <AppxPackagedFile Include="E:\Projects\!Xamarin\XamarinObservableTest\ObservableTest\ObservableTest.Windows\Assets\gradiente.png">
       <PackagePath>Assets\gradiente.png</PackagePath>
-      <Modified>2017-03-24T20:54:30.359</Modified>
+      <Modified>2017-03-25T05:08:57.671</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTest\ObservableTest.Windows\Assets\Leo.png">
+    <AppxPackagedFile Include="E:\Projects\!Xamarin\XamarinObservableTest\ObservableTest\ObservableTest.Windows\Assets\Leo.png">
       <PackagePath>Assets\Leo.png</PackagePath>
-      <Modified>2017-03-24T16:06:54.053</Modified>
+      <Modified>2017-03-25T05:08:57.671</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTest\ObservableTest.Windows\Assets\Logo.scale-100.png">
+    <AppxPackagedFile Include="E:\Projects\!Xamarin\XamarinObservableTest\ObservableTest\ObservableTest.Windows\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-07-07T01:01:10.000</Modified>
+      <Modified>2017-03-25T05:08:57.671</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTest\ObservableTest.Windows\Assets\SmallLogo.scale-100.png">
+    <AppxPackagedFile Include="E:\Projects\!Xamarin\XamarinObservableTest\ObservableTest\ObservableTest.Windows\Assets\SmallLogo.scale-100.png">
       <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-07-07T01:01:10.000</Modified>
+      <Modified>2017-03-25T05:08:57.671</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTest\ObservableTest.Windows\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="E:\Projects\!Xamarin\XamarinObservableTest\ObservableTest\ObservableTest.Windows\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-07-07T01:01:10.000</Modified>
+      <Modified>2017-03-25T05:08:57.671</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTest\ObservableTest.Windows\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="E:\Projects\!Xamarin\XamarinObservableTest\ObservableTest\ObservableTest.Windows\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-07-07T01:01:10.000</Modified>
+      <Modified>2017-03-25T05:08:57.671</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTest\ObservableTest.Windows\bin\Debug\ObservableTest.Windows.xr.xml">
+    <AppxPackagedFile Include="E:\Projects\!Xamarin\XamarinObservableTest\ObservableTest\ObservableTest.Windows\bin\Debug\ObservableTest.Windows.xr.xml">
       <PackagePath>ObservableTest.Windows.xr.xml</PackagePath>
-      <Modified>2017-03-24T15:45:14.411</Modified>
+      <Modified>2017-03-25T05:08:59.249</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTest\ObservableTest.Windows\bin\Debug\App.xbf">
+    <AppxPackagedFile Include="E:\Projects\!Xamarin\XamarinObservableTest\ObservableTest\ObservableTest.Windows\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2017-03-24T20:04:19.868</Modified>
+      <Modified>2017-03-25T16:53:08.054</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTest\ObservableTest.Windows\bin\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="E:\Projects\!Xamarin\XamarinObservableTest\ObservableTest\ObservableTest.Windows\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2017-03-24T20:04:19.872</Modified>
+      <Modified>2017-03-25T16:53:08.055</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\packages\Xamarin.Forms.2.2.0.31\lib\win81\Xamarin.Forms.Platform.WinRT\PageControl.xbf">
+    <AppxPackagedFile Include="E:\Projects\!Xamarin\XamarinObservableTest\packages\Xamarin.Forms.2.2.0.31\lib\win81\Xamarin.Forms.Platform.WinRT\PageControl.xbf">
       <PackagePath>Xamarin.Forms.Platform.WinRT\PageControl.xbf</PackagePath>
-      <Modified>2016-04-26T22:42:52.000</Modified>
+      <Modified>2017-03-25T05:09:41.041</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\packages\Xamarin.Forms.2.2.0.31\lib\win81\Xamarin.Forms.Platform.WinRT\StepperControl.xbf">
+    <AppxPackagedFile Include="E:\Projects\!Xamarin\XamarinObservableTest\packages\Xamarin.Forms.2.2.0.31\lib\win81\Xamarin.Forms.Platform.WinRT\StepperControl.xbf">
       <PackagePath>Xamarin.Forms.Platform.WinRT\StepperControl.xbf</PackagePath>
-      <Modified>2016-04-26T22:42:52.000</Modified>
+      <Modified>2017-03-25T05:09:41.041</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\packages\Xamarin.Forms.2.2.0.31\lib\win81\Xamarin.Forms.Platform.WinRT\Xamarin.Forms.Platform.WinRT.xr.xml">
+    <AppxPackagedFile Include="E:\Projects\!Xamarin\XamarinObservableTest\packages\Xamarin.Forms.2.2.0.31\lib\win81\Xamarin.Forms.Platform.WinRT\Xamarin.Forms.Platform.WinRT.xr.xml">
       <PackagePath>Xamarin.Forms.Platform.WinRT\Xamarin.Forms.Platform.WinRT.xr.xml</PackagePath>
-      <Modified>2016-04-26T22:42:52.000</Modified>
+      <Modified>2017-03-25T05:09:41.057</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\packages\Xamarin.Forms.2.2.0.31\lib\win81\Xamarin.Forms.Platform.WinRT.Tablet\FormsTextBoxStyle.xbf">
+    <AppxPackagedFile Include="E:\Projects\!Xamarin\XamarinObservableTest\packages\Xamarin.Forms.2.2.0.31\lib\win81\Xamarin.Forms.Platform.WinRT.Tablet\FormsTextBoxStyle.xbf">
       <PackagePath>Xamarin.Forms.Platform.WinRT.Tablet\FormsTextBoxStyle.xbf</PackagePath>
-      <Modified>2016-04-26T22:42:52.000</Modified>
+      <Modified>2017-03-25T05:09:40.869</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\packages\Xamarin.Forms.2.2.0.31\lib\win81\Xamarin.Forms.Platform.WinRT.Tablet\Resources.xbf">
+    <AppxPackagedFile Include="E:\Projects\!Xamarin\XamarinObservableTest\packages\Xamarin.Forms.2.2.0.31\lib\win81\Xamarin.Forms.Platform.WinRT.Tablet\Resources.xbf">
       <PackagePath>Xamarin.Forms.Platform.WinRT.Tablet\Resources.xbf</PackagePath>
-      <Modified>2016-04-26T22:42:52.000</Modified>
+      <Modified>2017-03-25T05:09:40.885</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\packages\Xamarin.Forms.2.2.0.31\lib\win81\Xamarin.Forms.Platform.WinRT.Tablet\TabletResources.xbf">
+    <AppxPackagedFile Include="E:\Projects\!Xamarin\XamarinObservableTest\packages\Xamarin.Forms.2.2.0.31\lib\win81\Xamarin.Forms.Platform.WinRT.Tablet\TabletResources.xbf">
       <PackagePath>Xamarin.Forms.Platform.WinRT.Tablet\TabletResources.xbf</PackagePath>
-      <Modified>2016-04-26T22:42:52.000</Modified>
+      <Modified>2017-03-25T05:09:40.947</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\packages\Xamarin.Forms.2.2.0.31\lib\win81\Xamarin.Forms.Platform.WinRT.Tablet\Xamarin.Forms.Platform.WinRT.Tablet.xr.xml">
+    <AppxPackagedFile Include="E:\Projects\!Xamarin\XamarinObservableTest\packages\Xamarin.Forms.2.2.0.31\lib\win81\Xamarin.Forms.Platform.WinRT.Tablet\Xamarin.Forms.Platform.WinRT.Tablet.xr.xml">
       <PackagePath>Xamarin.Forms.Platform.WinRT.Tablet\Xamarin.Forms.Platform.WinRT.Tablet.xr.xml</PackagePath>
-      <Modified>2016-04-26T22:42:52.000</Modified>
+      <Modified>2017-03-25T05:09:40.963</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTest\ObservableTest.Windows\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="E:\Projects\!Xamarin\XamarinObservableTest\ObservableTest\ObservableTest.Windows\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-03-24T21:47:50.952</Modified>
+      <Modified>2017-03-25T16:53:09.020</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
