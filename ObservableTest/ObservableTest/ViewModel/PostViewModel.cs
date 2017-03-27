@@ -28,17 +28,20 @@ namespace ObservableTest.ViewModel
         //MOCK DE DADOS
         public void CarregarPosts()
         {
-
-            UsuarioModel gilbertoMock = App.Database.GetUsuarioAsync().Result.Where(u=>u.Nome == "Gilberto").FirstOrDefault();
-            if (gilbertoMock == null)
+            if (App.UsuarioVM.Usuario == null)
+            {
+                App.UsuarioVM.Usuario = App.Database.GetUsuarioAsync().Result.Where(u=>u.Nome == "Gilberto").FirstOrDefault();
+            }
+            if (App.UsuarioVM.Usuario == null)
             { 
                 int idGilbertoMock = App.Database.SaveItemAsync(new UsuarioModel() { Nome = "Gilberto"}).Result;
-                gilbertoMock = App.Database.GetItemAsync(idGilbertoMock).Result;
+                App.UsuarioVM.Usuario = App.Database.GetItemAsync(idGilbertoMock).Result;
             }
+            App.UsuarioVM.Usuario.AvatarResource = "https://cvtrampos.files.wordpress.com/2013/05/ft-34.jpg";
             var post1 = new PostModel()
             {
                 Legenda = "Esse é o cartão Sênior",
-                Usuario = gilbertoMock,
+                Usuario = App.UsuarioVM.Usuario,
                 FotoUrl = "http://www.blogcartaobom.com.br/wp-content/uploads/2015/01/senior-frente.png"
             };
             Posts.Add(post1);

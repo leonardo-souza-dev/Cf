@@ -15,7 +15,7 @@ namespace ObservableTest
             InitializeComponent();
 
             //MOCK DE DADOS
-            // App.UsuarioVM.Usuario.Get(1);
+            App.UsuarioVM.Usuario = App.Database.GetItemAsync(1).Result;
 
             App.PostVM.CarregarPosts();
 

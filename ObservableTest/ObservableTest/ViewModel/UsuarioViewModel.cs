@@ -21,11 +21,16 @@ namespace ObservableTest.ViewModel
         public object AvatarResource { get; set; }
         public bool EditouAvatar { get; set; }
 
+        private UsuarioModel usuario;
         public UsuarioModel Usuario
         {
             get
             {
-                return App.Database.GetItemAsync(1).Result;
+                return usuario;
+            }
+            set
+            {
+                usuario = value;
             }
         }
 
