@@ -122,3 +122,15 @@ E:\Projects\!Xamarin\XamarinObservableTest\ObservableTest\ObservableTest.Windows
 E:\Projects\!Xamarin\XamarinObservableTest\ObservableTest\ObservableTest.Windows\obj\Debug\System.Runtime.InteropServices.RuntimeInformation\pri.resfiles.intermediate
 E:\Projects\!Xamarin\XamarinObservableTest\ObservableTest\ObservableTest.Windows\obj\Debug\System.Runtime.InteropServices.RuntimeInformation\priconfig.xml
 E:\Projects\!Xamarin\XamarinObservableTest\ObservableTest\ObservableTest.Windows\obj\Debug\System.Runtime.InteropServices.RuntimeInformation\priconfig.xml.intermediate
+C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTest\ObservableTest.Windows\bin\Debug\SQLite-net.dll
+C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTest\ObservableTest.Windows\bin\Debug\SQLitePCLRaw.batteries_green.dll
+C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTest\ObservableTest.Windows\bin\Debug\SQLitePCLRaw.batteries_v2.dll
+C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTest\ObservableTest.Windows\bin\Debug\SQLitePCLRaw.core.dll
+C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTest\ObservableTest.Windows\bin\Debug\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTest\ObservableTest.Windows\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTest\ObservableTest.Windows\bin\Debug\Newtonsoft.Json.dll
+C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTest\ObservableTest.Windows\bin\Debug\SQLite-net.xml
+C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTest\ObservableTest.Windows\bin\Debug\Newtonsoft.Json.xml
+C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTest\ObservableTest.Windows\obj\Debug\System.Runtime.InteropServices.RuntimeInformation\en-US\FxResources.System.Runtime.InteropServices.RuntimeInformation.SR.resw
+C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTest\ObservableTest.Windows\obj\Debug\System.Runtime.InteropServices.RuntimeInformation.pri
+C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTest\ObservableTest.Windows\obj\Debug\System.Runtime.InteropServices.RuntimeInformation\qualifiers.txt

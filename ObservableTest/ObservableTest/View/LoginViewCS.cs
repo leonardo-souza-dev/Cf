@@ -178,11 +178,10 @@ namespace ObservableTest.View
 
             string email = EmailEntry.Text;
             string senha = SenhaEntry.Text;
-            
-            //bool logou = await App.UsuarioVM.Login(email, senha);
-            bool logou = true;//mock
 
-            if (logou)
+            App.UsuarioVM.Usuario = await App.UsuarioVM.Login(email, senha);
+
+            if (App.UsuarioVM.Usuario.ID > 0)
             {
                 var mainPage = new TabHost();
                 await Navigation.PushModalAsync(mainPage);

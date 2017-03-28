@@ -18,7 +18,7 @@
                                     <Image Source="{Binding Usuario.AvatarUrl}" Margin="4" WidthRequest="36" HeightRequest="36"/>
                                     <Label Text="{Binding Usuario.Nome}" FontSize="12" Margin="0,2" TextColor="#343434"/>
                                 </StackLayout>
-                                <Image Source="{Binding FotoUrl}" Margin="0" BackgroundColor="Aqua" Aspect="AspectFit" VerticalOptions="CenterAndExpand"/>
+                                <Image Source="{Binding FotoUrl}" Margin="0" BackgroundColor="White" Aspect="AspectFit" VerticalOptions="CenterAndExpand"/>
                                 <Label Text="{Binding Legenda}" FontSize="18" Margin="0,4" HorizontalOptions="CenterAndExpand" TextColor="#343434" BackgroundColor="White"/>
                                 <!--<StackLayout Padding="0" Margin="0,0,0,4" Spacing="0" BackgroundColor="White" HeightRequest="36" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Orientation="Horizontal">
                                     <Button FontSize="10" TextColor="Black" Text="{Binding CurtidaTexto}" Margin="0" BackgroundColor="Transparent" BorderColor="Transparent" HorizontalOptions="Start" VerticalOptions="Center" Clicked="CurtirButtonClicked" />

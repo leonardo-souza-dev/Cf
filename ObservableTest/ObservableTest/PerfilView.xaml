@@ -18,7 +18,7 @@
     
     <ContentPage.Content>
         <ScrollView>
-            <RelativeLayout Margin="0" BackgroundColor="Lime">
+            <RelativeLayout Margin="0" BackgroundColor="White">
                 <Image x:Name="capa" 
                        Source="gradiente.png"
                        Aspect="Fill"
@@ -27,7 +27,7 @@
                        RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"  />
                 <Button x:Name="borda"  
                         BorderRadius="0"
-                        BackgroundColor="Gray" 
+                        BackgroundColor="White" 
                         RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Factor=0.45, Property=Width}" 
                         RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Factor=0.45, Property=Width}" 
                         RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Factor=0.275, Property=Width}" 

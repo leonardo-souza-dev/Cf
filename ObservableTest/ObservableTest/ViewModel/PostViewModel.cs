@@ -28,23 +28,30 @@ namespace ObservableTest.ViewModel
         //MOCK DE DADOS
         public void CarregarPosts()
         {
+            ////////////if (App.UsuarioVM.Usuario == null)
+            ////////////{
+            ////////////    App.UsuarioVM.Usuario = App.Database.GetUsuarioAsync().Result.Where(u=>u.Nome == "Gilberto").FirstOrDefault();
+            ////////////}
+            ////////////if (App.UsuarioVM.Usuario == null)
+            ////////////{ 
+            ////////////    int idGilbertoMock = App.Database.SaveItemAsync(new UsuarioModel() { Nome = "Gilberto"}).Result;
+            ////////////    App.UsuarioVM.Usuario = App.Database.GetItemAsync(idGilbertoMock).Result;
+            ////////////}
+            ////////////App.UsuarioVM.Usuario.AvatarUrl = "https://cvtrampos.files.wordpress.com/2013/05/ft-34.jpg";
+            ////////////App.UsuarioVM.Usuario.Email = "sukinho@dog.com.br";
+
             if (App.UsuarioVM.Usuario == null)
             {
-                App.UsuarioVM.Usuario = App.Database.GetUsuarioAsync().Result.Where(u=>u.Nome == "Gilberto").FirstOrDefault();
+                App.UsuarioVM.Usuario = App.UsuarioVM.Login("qwe", "qwe").Result;
             }
-            if (App.UsuarioVM.Usuario == null)
-            { 
-                int idGilbertoMock = App.Database.SaveItemAsync(new UsuarioModel() { Nome = "Gilberto"}).Result;
-                App.UsuarioVM.Usuario = App.Database.GetItemAsync(idGilbertoMock).Result;
-            }
-            App.UsuarioVM.Usuario.AvatarUrl = "https://cvtrampos.files.wordpress.com/2013/05/ft-34.jpg";
-            App.UsuarioVM.Usuario.Email = "sukinho@dog.com.br";
+
             var post1 = new PostModel()
             {
                 Legenda = "Esse é o cartão Sênior",
                 Usuario = App.UsuarioVM.Usuario,
                 FotoUrl = "http://www.blogcartaobom.com.br/wp-content/uploads/2015/01/senior-frente.png"
             };
+
             Posts.Add(post1);
 
             //Posts.Add(new PostModel()

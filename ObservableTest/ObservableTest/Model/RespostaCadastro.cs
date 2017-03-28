@@ -1,0 +1,17 @@
+﻿using System.Runtime.Serialization;
+
+namespace ObservableTest.Model
+{
+    [DataContract]
+    public class RespostaCadastro
+    {
+        [DataMember]
+        internal bool sucesso;
+
+        [DataMember]
+        internal string mensagem;
+
+        [DataMember]
+        internal RespostaUsuario usuario;
+    }
+}

@@ -1,4 +1,5 @@
-﻿using ObservableTest.Model;
+﻿using ObservableTest.Data;
+using ObservableTest.Model;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -44,22 +45,21 @@ namespace ObservableTest.ViewModel
         {
             try
             {
-                bool mudou = Usuario.Email != TempEmail || Usuario.Nome != TempNomeUsuario || Usuario.AvatarUrl != TempNomeArquivoAvatar || EditouAvatar;
+                bool mudou = Usuario.Email != TempEmail || Usuario.Nome != TempNomeUsuario || Usuario.NomeArquivoAvatar != TempNomeArquivoAvatar || EditouAvatar;
 
                 if (mudou)
                 {
                     if (EditouAvatar)
                     {
-                        //var nomeArquivo = App.UsuarioVM.UploadAvatar(bytes).Result;
-                        var nomeArquivo = "https://studiosol-a.akamaihd.net/letras/50x50/fotos/6/5/4/7/6547bd58e87551e86aaa494f8ba21d9f-tb2.jpg";
+                        var arquivoImagemAvatar = App.UsuarioVM.UploadAvatar(bytes).Result;
 
-                        App.UsuarioVM.Usuario.AvatarUrl = nomeArquivo;
+                        App.UsuarioVM.Usuario.NomeArquivoAvatar = arquivoImagemAvatar;
                     }
 
                     try
                     {
-                        //var usuarioAtualizado = await UsuarioRepository.Atualizar();
-                        UsuarioModel usuarioAtualizado = new UsuarioModel() { ID = 1 };//MOCK
+                        var usuarioAtualizado = await UsuarioRepository.Atualizar();
+                        //UsuarioModel usuarioAtualizado = new UsuarioModel() { ID = 1 };//MOCK
 
                         if (usuarioAtualizado.ID == -1 && !EditouAvatar)
                         {
@@ -78,6 +78,19 @@ namespace ObservableTest.ViewModel
             {
                 return RespostaStatus.ErroGenerico;
             }
+        }
+
+        public async Task<UsuarioModel> Login(string email, string senha)
+        {
+            this.Usuario = await UsuarioRepository.Login(email, senha);
+
+            return this.Usuario;
+        }
+
+        public async Task<string> UploadAvatar(byte[] bytes)
+        {
+            var resposta = await UsuarioRepository.UploadAvatar(bytes);
+            return resposta.nomeArquivo;
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

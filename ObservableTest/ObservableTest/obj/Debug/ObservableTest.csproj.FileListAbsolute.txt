@@ -21,8 +21,6 @@ C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\Observab
 C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTest\ObservableTest\bin\Debug\Plugin.Media.Abstractions.pdb
 C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTest\ObservableTest\bin\Debug\Plugin.Media.Abstractions.xml
 C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTest\ObservableTest\bin\Debug\SQLite-net.dll
-C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTest\ObservableTest\bin\Debug\SQLitePCLRaw.batteries_green.dll
-C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTest\ObservableTest\bin\Debug\SQLitePCLRaw.batteries_v2.dll
 C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTest\ObservableTest\bin\Debug\SQLitePCLRaw.core.dll
 C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTest\ObservableTest\bin\Debug\SQLite-net.xml
 E:\Projects\!Xamarin\XamarinObservableTest\ObservableTest\ObservableTest\bin\Debug\ObservableTest.dll
@@ -50,3 +48,14 @@ E:\Projects\!Xamarin\XamarinObservableTest\ObservableTest\ObservableTest\obj\Deb
 E:\Projects\!Xamarin\XamarinObservableTest\ObservableTest\ObservableTest\obj\Debug\ObservableTest.csprojResolveAssemblyReference.cache
 E:\Projects\!Xamarin\XamarinObservableTest\ObservableTest\ObservableTest\bin\Debug\SQLite-net.dll
 E:\Projects\!Xamarin\XamarinObservableTest\ObservableTest\ObservableTest\bin\Debug\SQLite-net.xml
+C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTest\ObservableTest\bin\Debug\ObservableTest.dll.config
+C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTest\ObservableTest\bin\Debug\Newtonsoft.Json.dll
+C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTest\ObservableTest\bin\Debug\System.Net.Http.dll
+C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTest\ObservableTest\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTest\ObservableTest\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTest\ObservableTest\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTest\ObservableTest\bin\Debug\Newtonsoft.Json.xml
+C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTest\ObservableTest\bin\Debug\System.Net.Http.xml
+C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTest\ObservableTest\bin\Debug\System.Net.Http.Extensions.xml
+C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTest\ObservableTest\bin\Debug\System.Net.Http.Primitives.xml
+C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTest\ObservableTest\obj\Debug\ObservableTest.csproj.App.config

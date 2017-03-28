@@ -14,9 +14,6 @@ namespace ObservableTest
         {
             InitializeComponent();
 
-            //MOCK DE DADOS
-            App.UsuarioVM.Usuario = App.Database.GetItemAsync(1).Result;
-
             App.PostVM.CarregarPosts();
 
             this.BindingContext = App.PostVM;

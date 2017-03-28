@@ -68,7 +68,7 @@ namespace ObservableTest
         protected void EditarClicked(object sender, EventArgs e)
         {
             App.UsuarioVM.TempEmail = App.UsuarioVM.Usuario.Email;
-            App.UsuarioVM.TempNomeArquivoAvatar = App.UsuarioVM.Usuario.AvatarUrl;
+            App.UsuarioVM.TempNomeArquivoAvatar = App.UsuarioVM.Usuario.NomeArquivoAvatar;
             App.UsuarioVM.TempNomeUsuario = App.UsuarioVM.Usuario.Nome;
 
             modoEdicao = true;

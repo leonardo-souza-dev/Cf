@@ -2,30 +2,42 @@
 using SQLite;
 using System;
 using System.ComponentModel;
+using System.Runtime.Serialization;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace ObservableTest.Model
 {
+    [DataContract]
     public class UsuarioModel : INotifyPropertyChanged
     {
         #region Propriedades
 
         [PrimaryKey, AutoIncrement]
+        [DataMember(Name = "usuarioId")]
         public int ID { get; set; }
 
+        [DataMember(Name = "nomeUsuario")]
         public string Nome { get { return nome; } set { nome = value; OnPropertyChanged("Nome"); } }
         private string nome;
 
+        [DataMember(Name = "email")]
         public string Email { get { return email; } set { email = value; OnPropertyChanged("Email"); } }
         private string email;
 
         [Ignore]
-        public string AvatarUrl { get { return avatarUrl;} set { avatarUrl = value;OnPropertyChanged("AvatarUrl"); }}
-        private string avatarUrl;
+        public string AvatarUrl { get {
+                return App.Config.ObterUrlAvatar(nomeArquivoAvatar);
+            }
+            //set { avatarUrl = value;OnPropertyChanged("AvatarUrl"); }
+        }
+        //private string avatarUrl;
+
+        [DataMember(Name = "nomeArquivoAvatar")]
+        public string NomeArquivoAvatar { get { return nomeArquivoAvatar; } set { nomeArquivoAvatar = value; OnPropertyChanged("NomeArquivoAvatar"); OnPropertyChanged("AvatarUrl"); } }
+        private string nomeArquivoAvatar;
 
         #endregion
-
 
         #region UsuarioModel Local Database
 
@@ -47,7 +59,10 @@ namespace ObservableTest.Model
         #region INotifyPropertyChanged
 
         public event PropertyChangedEventHandler PropertyChanged;
-        protected void OnPropertyChanged(string name) { PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name)); }
+        protected void OnPropertyChanged(string name)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
+        }
         
         #endregion
     }

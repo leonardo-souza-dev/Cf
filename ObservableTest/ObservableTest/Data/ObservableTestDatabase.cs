@@ -27,7 +27,9 @@ namespace ObservableTest.Data
 
         public Task<UsuarioModel> GetItemAsync(int id)
         {
-            return database.Table<UsuarioModel>().Where(i => i.ID == id).FirstOrDefaultAsync();
+            var usuario = database.Table<UsuarioModel>().Where(i => i.ID == id).FirstOrDefaultAsync();
+
+            return usuario;
         }
 
         public Task<int> SaveItemAsync(UsuarioModel item)
