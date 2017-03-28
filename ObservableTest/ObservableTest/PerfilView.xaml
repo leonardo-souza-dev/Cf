@@ -4,27 +4,21 @@
              x:Class="ObservableTest.PerfilView"
              BackgroundColor="Silver"
              Title="perfil">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="entry_background">#FFFFFF</Color>
+            <Color x:Key="entry_text">#222222</Color>
+
+            <Style x:Key="MyEntry" TargetType="Entry">
+                <Setter Property="BackgroundColor" Value="{StaticResource entry_background}" />
+                <Setter Property="TextColor" Value="{StaticResource entry_text}" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
     
     <ContentPage.Content>
         <ScrollView>
-            <!--<StackLayout>
-
-                <Label Text="meu perfil" FontSize="Large"/>
-
-                <Label Text="Nome" FontSize="Default"/>
-                <Entry Text="{Binding Nome}" />
-
-                <Label Text="Nome arquivo avatar" FontSize="Default"/>
-                <Entry Text="{Binding AvatarResource}" />
-
-                <Button Text="Salvar" Clicked="Salvar_Clicked" />
-            </StackLayout>-->
-
             <RelativeLayout Margin="0" BackgroundColor="Lime">
-                <Entry Text="{Binding AvatarResource}"
-                       BackgroundColor="Red"
-                        RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Factor=0.2, Property=Width}" 
-                        RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Factor=0.567, Property=Height }" />
                 <Image x:Name="capa" 
                        Source="gradiente.png"
                        Aspect="Fill"
@@ -38,7 +32,7 @@
                         RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Factor=0.45, Property=Width}" 
                         RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Factor=0.275, Property=Width}" 
                         RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=capa, Factor=0.567, Property=Height }" />
-                <Image Source="{Binding AvatarResource}"
+                <Image Source="{Binding AvatarUrl}"
                        x:Name="avatarImage"
                        Aspect="Fill"
                        BackgroundColor="White" 
@@ -50,6 +44,73 @@
                         <TapGestureRecognizer Tapped="OnAvatarImageTapped" NumberOfTapsRequired="1" />
                     </Image.GestureRecognizers>
                 </Image>
+                <StackLayout Padding="1,1,1,1" 
+                             RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=borda, Property=Y, Factor=2.75}" 
+                             RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}">
+                    <Entry x:Name="nomeUsuarioEntry" 
+                           Text="{Binding Nome}" 
+                           Style="{StaticResource MyEntry}"
+                           FontAttributes="Bold" 
+                           FontSize="26" 
+                           HorizontalTextAlignment="Center"  />
+                </StackLayout>
+                <StackLayout Padding="1,1,1,1" 
+                             RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=borda, Property=Y, Factor=3}" 
+                             RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}">
+                    <Entry x:Name="emailEntry" 
+                           Text="{Binding Email}" 
+                           Style="{StaticResource MyEntry}"
+                           FontAttributes="Bold" 
+                           FontSize="26" 
+                           HorizontalTextAlignment="Center" />
+                </StackLayout>
+                <StackLayout Padding="1,1,1,1"
+                             RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=borda, Property=Y, Factor=3.3}" 
+                             RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}" >
+                    <Entry Text="raça" 
+                           Style="{StaticResource MyEntry}"
+                           FontAttributes="Bold" 
+                           FontSize="26" 
+                           HorizontalTextAlignment="Center" />
+                </StackLayout>
+                <Button Text="Cancelar" 
+                        x:Name="cancelarButton"
+                        TextColor="White" 
+                        BackgroundColor="#30b6b5"
+                        HorizontalOptions="FillAndExpand"
+                        WidthRequest="80"
+                        Margin="4"
+                        Clicked="CancelarClicked"
+                        IsVisible="False"
+                        IsEnabled="False"
+                        RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.121,Constant=0}"
+                        RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.785}" 
+                        RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}" />
+                <Button Text="Salvar" 
+                        x:Name="salvarButton"
+                        TextColor="White" 
+                        BackgroundColor="#30b6b5"
+                        HorizontalOptions="FillAndExpand"
+                        WidthRequest="80"
+                        Margin="4"
+                        Clicked="SalvarClicked"
+                        IsVisible="False"
+                        IsEnabled="False"
+                        RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.121,Constant=0}"
+                        RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.885}" 
+                        RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}" />
+                <Button Text="Editar" 
+                        x:Name="editarButton"
+                        TextColor="White" 
+                        BackgroundColor="#30b6b5"
+                        HorizontalOptions="FillAndExpand"
+                        WidthRequest="80"
+                        IsEnabled="True"
+                        Margin="4"
+                        Clicked="EditarClicked"
+                        RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.121,Constant=0}"
+                        RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.885}" 
+                        RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}" />
             </RelativeLayout>
         </ScrollView>
     </ContentPage.Content>

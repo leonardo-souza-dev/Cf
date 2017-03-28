@@ -62,3 +62,11 @@ E:\Projects\!Xamarin\XamarinObservableTest\ObservableTest\ObservableTest.Windows
 E:\Projects\!Xamarin\XamarinObservableTest\ObservableTest\ObservableTest.Windows\obj\x64\Debug\Xamarin.Forms.Platform.WinRT.pri.xml
 E:\Projects\!Xamarin\XamarinObservableTest\ObservableTest\ObservableTest.Windows\obj\x64\Debug\Xamarin.Forms.Platform.WinRT.Tablet.pri.xml
 E:\Projects\!Xamarin\XamarinObservableTest\ObservableTest\ObservableTest.Windows\obj\x64\Debug\ProjectArchitectures.txt
+E:\Projects\!Xamarin\XamarinObservableTest\ObservableTest\ObservableTest.Windows\obj\x64\Debug\System.Runtime.InteropServices.RuntimeInformation\layout.resfiles
+E:\Projects\!Xamarin\XamarinObservableTest\ObservableTest\ObservableTest.Windows\obj\x64\Debug\System.Runtime.InteropServices.RuntimeInformation\layout.resfiles.intermediate
+E:\Projects\!Xamarin\XamarinObservableTest\ObservableTest\ObservableTest.Windows\obj\x64\Debug\System.Runtime.InteropServices.RuntimeInformation\Resources.resfiles
+E:\Projects\!Xamarin\XamarinObservableTest\ObservableTest\ObservableTest.Windows\obj\x64\Debug\System.Runtime.InteropServices.RuntimeInformation\Resources.resfiles.intermediate
+E:\Projects\!Xamarin\XamarinObservableTest\ObservableTest\ObservableTest.Windows\obj\x64\Debug\System.Runtime.InteropServices.RuntimeInformation\pri.resfiles
+E:\Projects\!Xamarin\XamarinObservableTest\ObservableTest\ObservableTest.Windows\obj\x64\Debug\System.Runtime.InteropServices.RuntimeInformation\pri.resfiles.intermediate
+E:\Projects\!Xamarin\XamarinObservableTest\ObservableTest\ObservableTest.Windows\obj\x64\Debug\System.Runtime.InteropServices.RuntimeInformation\priconfig.xml
+E:\Projects\!Xamarin\XamarinObservableTest\ObservableTest\ObservableTest.Windows\obj\x64\Debug\System.Runtime.InteropServices.RuntimeInformation\priconfig.xml.intermediate

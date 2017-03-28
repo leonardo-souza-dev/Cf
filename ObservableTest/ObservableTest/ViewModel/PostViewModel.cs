@@ -37,7 +37,8 @@ namespace ObservableTest.ViewModel
                 int idGilbertoMock = App.Database.SaveItemAsync(new UsuarioModel() { Nome = "Gilberto"}).Result;
                 App.UsuarioVM.Usuario = App.Database.GetItemAsync(idGilbertoMock).Result;
             }
-            App.UsuarioVM.Usuario.AvatarResource = "https://cvtrampos.files.wordpress.com/2013/05/ft-34.jpg";
+            App.UsuarioVM.Usuario.AvatarUrl = "https://cvtrampos.files.wordpress.com/2013/05/ft-34.jpg";
+            App.UsuarioVM.Usuario.Email = "sukinho@dog.com.br";
             var post1 = new PostModel()
             {
                 Legenda = "Esse é o cartão Sênior",

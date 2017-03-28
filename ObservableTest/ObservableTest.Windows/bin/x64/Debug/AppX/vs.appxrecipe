@@ -28,17 +28,17 @@
     <AppXManifest Include="E:\Projects\!Xamarin\XamarinObservableTest\ObservableTest\ObservableTest.Windows\bin\x64\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-03-25T18:03:15.874</Modified>
+      <Modified>2017-03-27T02:51:20.924</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="E:\Projects\!Xamarin\XamarinObservableTest\ObservableTest\ObservableTest.Windows\bin\x64\Debug\ObservableTest.Windows.exe">
       <PackagePath>ObservableTest.Windows.exe</PackagePath>
-      <Modified>2017-03-25T18:10:54.221</Modified>
+      <Modified>2017-03-28T18:14:23.943</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\!Xamarin\XamarinObservableTest\ObservableTest\ObservableTest\bin\Debug\ObservableTest.dll">
       <PackagePath>ObservableTest.dll</PackagePath>
-      <Modified>2017-03-25T18:10:52.438</Modified>
+      <Modified>2017-03-28T18:14:21.477</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\!Xamarin\XamarinObservableTest\packages\Xam.Plugin.Media.2.6.2\lib\win8\Plugin.Media.Abstractions.dll">
       <PackagePath>Plugin.Media.Abstractions.dll</PackagePath>
@@ -167,7 +167,7 @@
     <AppxPackagedFile Include="E:\Projects\!Xamarin\XamarinObservableTest\ObservableTest\ObservableTest.Windows\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-03-25T18:05:01.282</Modified>
+      <Modified>2017-03-28T18:14:25.777</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

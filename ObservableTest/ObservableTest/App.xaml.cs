@@ -1,5 +1,6 @@
 ﻿using ObservableTest.Data;
 using ObservableTest.Model;
+using ObservableTest.View;
 using ObservableTest.ViewModel;
 using System;
 using System.Collections.Generic;
@@ -21,7 +22,7 @@ namespace ObservableTest
             UsuarioVM = new UsuarioViewModel();
             PostVM = new PostViewModel();
 
-            MainPage = new TabHost();
+            MainPage = new LoginViewCS();
         }
 
         public static PostViewModel PostVM { get; set; }

@@ -17,9 +17,12 @@ namespace ObservableTest.Model
         public string Nome { get { return nome; } set { nome = value; OnPropertyChanged("Nome"); } }
         private string nome;
 
+        public string Email { get { return email; } set { email = value; OnPropertyChanged("Email"); } }
+        private string email;
+
         [Ignore]
-        public object AvatarResource { get { return avatarResource;} set { avatarResource = value;OnPropertyChanged("AvatarResource"); }}
-        private object avatarResource;
+        public string AvatarUrl { get { return avatarUrl;} set { avatarUrl = value;OnPropertyChanged("AvatarUrl"); }}
+        private string avatarUrl;
 
         #endregion
 

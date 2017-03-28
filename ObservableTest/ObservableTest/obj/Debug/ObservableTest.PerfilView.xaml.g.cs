@@ -26,11 +26,31 @@ namespace ObservableTest {
         private global::Xamarin.Forms.Image avatarImage;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Entry nomeUsuarioEntry;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Entry emailEntry;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Button cancelarButton;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Button salvarButton;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Button editarButton;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(PerfilView));
             capa = this.FindByName<global::Xamarin.Forms.Image>("capa");
             borda = this.FindByName<global::Xamarin.Forms.Button>("borda");
             avatarImage = this.FindByName<global::Xamarin.Forms.Image>("avatarImage");
+            nomeUsuarioEntry = this.FindByName<global::Xamarin.Forms.Entry>("nomeUsuarioEntry");
+            emailEntry = this.FindByName<global::Xamarin.Forms.Entry>("emailEntry");
+            cancelarButton = this.FindByName<global::Xamarin.Forms.Button>("cancelarButton");
+            salvarButton = this.FindByName<global::Xamarin.Forms.Button>("salvarButton");
+            editarButton = this.FindByName<global::Xamarin.Forms.Button>("editarButton");
         }
     }
 }

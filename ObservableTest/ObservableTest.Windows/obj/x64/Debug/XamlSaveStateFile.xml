@@ -2,7 +2,7 @@
   <ReferenceAssemblyList>
     <LocalAssembly PathName="e:\projects\!xamarin\xamarinobservabletest\observabletest\observabletest.windows\obj\x64\debug\intermediatexaml\observabletest.windows.exe" HashGuid="40986066-9547-4460-ffab-c9b50d133595" />
     <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windows\v8.1\extensionsdks\microsoft.vclibs\12.0\references\commonconfiguration\neutral\platform.winmd" HashGuid="58b6b6d1-928e-9908-9804-eb460e5e101b" />
-    <ReferenceAssembly PathName="e:\projects\!xamarin\xamarinobservabletest\observabletest\observabletest\bin\debug\observabletest.dll" HashGuid="aa4bbd52-0c37-2bcb-bc3f-09990ac71dc5" />
+    <ReferenceAssembly PathName="e:\projects\!xamarin\xamarinobservabletest\observabletest\observabletest\bin\debug\observabletest.dll" HashGuid="c9b1a82a-8040-7b41-83eb-46444cd7cdfe" />
     <ReferenceAssembly PathName="e:\projects\!xamarin\xamarinobservabletest\packages\xam.plugin.media.2.6.2\lib\win8\plugin.media.abstractions.dll" HashGuid="2f026a7c-41cf-6c4a-d5ab-5661045873a2" />
     <ReferenceAssembly PathName="e:\projects\!xamarin\xamarinobservabletest\packages\xam.plugin.media.2.6.2\lib\win8\plugin.media.dll" HashGuid="7f014772-d7e3-ddb4-76f7-34221fb44f13" />
     <ReferenceAssembly PathName="e:\projects\!xamarin\xamarinobservabletest\packages\sqlite-net-pcl.1.2.1\lib\portable-net45+wp8+wpa81+win8+monoandroid10+monotouch10+xamarin.ios10\sqlite-net.dll" HashGuid="bd7c0e9c-bb52-33fb-1605-0de813a4c898" />
