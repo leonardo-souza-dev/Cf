@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ObservableTest.View;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,13 +10,13 @@ namespace ObservableTest
 {
     public class TabHost : TabbedPage
     {
-        private MainPage Explorar;
+        private ExplorarView Explorar;
         //private UploadView Upload;
         private PerfilView Perfil;
 
         public TabHost()
         {
-            Explorar = new MainPage();
+            Explorar = new ExplorarView();
             //Upload = new UploadView(this);
             Perfil = new PerfilView();
 

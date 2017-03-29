@@ -42,8 +42,8 @@
     <Compile Include="Data\ObservableTestDatabase.cs" />
     <Compile Include="Data\UsuarioRepository.cs" />
     <Compile Include="IFileHelper.cs" />
-    <Compile Include="MainPage.xaml.cs">
-      <DependentUpon>MainPage.xaml</DependentUpon>
+    <Compile Include="View\ExplorarView.xaml.cs">
+      <DependentUpon>ExplorarView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Model\PostModel.cs" />
     <Compile Include="Model\RespostaEsqueciSenha.cs" />
@@ -53,7 +53,7 @@
     <Compile Include="Model\RespostaFetch.cs" />
     <Compile Include="Model\RespostaStatus.cs" />
     <Compile Include="Model\UsuarioModel.cs" />
-    <Compile Include="PerfilView.xaml.cs">
+    <Compile Include="View\PerfilView.xaml.cs">
       <DependentUpon>PerfilView.xaml</DependentUpon>
     </Compile>
     <Compile Include="ConfiguracaoApp.cs" />
@@ -64,7 +64,7 @@
     <Compile Include="View\LoginViewCS.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="MainPage.xaml">
+    <EmbeddedResource Include="View\ExplorarView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -74,7 +74,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="PerfilView.xaml">
+    <EmbeddedResource Include="View\PerfilView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

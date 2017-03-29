@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace ObservableTest
+namespace ObservableTest.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PerfilView : ContentPage

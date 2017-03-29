@@ -6,11 +6,11 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace ObservableTest
+namespace ObservableTest.View
 {
-    public partial class MainPage : ContentPage
+    public partial class ExplorarView : ContentPage
     {
-        public MainPage()
+        public ExplorarView()
         {
             InitializeComponent();
 
