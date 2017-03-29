@@ -1,15 +1,12 @@
-﻿using ObservableTest.Data;
-using ObservableTest.Model;
-using ObservableTest.View;
-using ObservableTest.ViewModel;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using Cf;
+using Cf.Data;
+using Cf.Model;
+using Cf.View;
+using Cf.ViewModel;
 
 using Xamarin.Forms;
 
-namespace ObservableTest
+namespace Cf
 {
     public partial class App : Application
     {

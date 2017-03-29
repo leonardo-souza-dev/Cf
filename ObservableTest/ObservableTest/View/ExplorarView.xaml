@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ObservableTest.View.ExplorarView" 
-             Title="BOM">
+             x:Class="Cf.View.ExplorarView" 
+             Title="explorar">
     <ContentPage.Content>
         <StackLayout Padding="0" BackgroundColor="White" Margin="0" Orientation="Vertical" >
             <Label Text="explorar" TextColor="#333333" FontSize="Large" FontAttributes="Bold" HorizontalOptions="Center" Margin="0,4"/>

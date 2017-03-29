@@ -1,5 +1,5 @@
-﻿using ObservableTest.Data;
-using ObservableTest.Windows;
+﻿using Cf.Data;
+using Cf.Windows;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -10,7 +10,7 @@ using Windows.Storage;
 using Xamarin.Forms;
 
 [assembly: Dependency(typeof(FileHelper))]
-namespace ObservableTest.Windows
+namespace Cf.Windows
 {
     public class FileHelper : IFileHelper
     {

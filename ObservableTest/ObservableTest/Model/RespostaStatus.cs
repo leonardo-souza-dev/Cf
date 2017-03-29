@@ -1,4 +1,4 @@
-﻿namespace ObservableTest.Model
+﻿namespace Cf.Model
 {
     public enum RespostaStatus
     {

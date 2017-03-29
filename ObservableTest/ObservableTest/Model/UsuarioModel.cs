@@ -1,4 +1,4 @@
-﻿using ObservableTest.Data;
+﻿using Cf.Data;
 using SQLite;
 using System;
 using System.ComponentModel;
@@ -6,7 +6,7 @@ using System.Runtime.Serialization;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace ObservableTest.Model
+namespace Cf.Model
 {
     [DataContract]
     public class UsuarioModel : INotifyPropertyChanged

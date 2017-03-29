@@ -1,9 +1,9 @@
-﻿using ObservableTest.Model;
+﻿using Cf.Model;
 using SQLite;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace ObservableTest.Data
+namespace Cf.Data
 {
     public class ObservableTestDatabase
     {

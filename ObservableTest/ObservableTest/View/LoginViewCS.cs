@@ -1,5 +1,5 @@
-﻿using ObservableTest.Model;
-using ObservableTest.ViewModel;
+﻿using Cf.Model;
+using Cf.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace ObservableTest.View
+namespace Cf.View
 {
     public partial class LoginViewCS : ContentPage
     {

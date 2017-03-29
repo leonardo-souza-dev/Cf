@@ -9,17 +9,17 @@
 
 
 
-namespace ObservableTest.Windows
+namespace Cf.Windows
 {
     public partial class App : global::Windows.UI.Xaml.Markup.IXamlMetadataProvider
     {
-        private global::ObservableTest.Windows.ObservableTest_Windows_XamlTypeInfo.XamlTypeInfoProvider _provider;
+        private global::Cf.Windows.Cf_Windows_XamlTypeInfo.XamlTypeInfoProvider _provider;
 
         public global::Windows.UI.Xaml.Markup.IXamlType GetXamlType(global::System.Type type)
         {
             if(_provider == null)
             {
-                _provider = new global::ObservableTest.Windows.ObservableTest_Windows_XamlTypeInfo.XamlTypeInfoProvider();
+                _provider = new global::Cf.Windows.Cf_Windows_XamlTypeInfo.XamlTypeInfoProvider();
             }
             return _provider.GetXamlTypeByType(type);
         }
@@ -28,7 +28,7 @@ namespace ObservableTest.Windows
         {
             if(_provider == null)
             {
-                _provider = new global::ObservableTest.Windows.ObservableTest_Windows_XamlTypeInfo.XamlTypeInfoProvider();
+                _provider = new global::Cf.Windows.Cf_Windows_XamlTypeInfo.XamlTypeInfoProvider();
             }
             return _provider.GetXamlTypeByName(fullName);
         }
@@ -40,7 +40,7 @@ namespace ObservableTest.Windows
     }
 }
 
-namespace ObservableTest.Windows.ObservableTest_Windows_XamlTypeInfo
+namespace Cf.Windows.Cf_Windows_XamlTypeInfo
 {
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks", "4.0.0.0")]    
@@ -59,7 +59,7 @@ namespace ObservableTest.Windows.ObservableTest_Windows_XamlTypeInfo
             {
                 xamlType = CreateXamlType(typeIndex);
             }
-            var userXamlType = xamlType as global::ObservableTest.Windows.ObservableTest_Windows_XamlTypeInfo.XamlUserType;
+            var userXamlType = xamlType as global::Cf.Windows.Cf_Windows_XamlTypeInfo.XamlUserType;
             if(xamlType == null || (userXamlType != null && userXamlType.IsReturnTypeStub && !userXamlType.IsLocalType))
             {
                 global::Windows.UI.Xaml.Markup.IXamlType libXamlType = CheckOtherMetadataProvidersForType(type);
@@ -95,7 +95,7 @@ namespace ObservableTest.Windows.ObservableTest_Windows_XamlTypeInfo
             {
                 xamlType = CreateXamlType(typeIndex);
             }
-            var userXamlType = xamlType as global::ObservableTest.Windows.ObservableTest_Windows_XamlTypeInfo.XamlUserType;
+            var userXamlType = xamlType as global::Cf.Windows.Cf_Windows_XamlTypeInfo.XamlUserType;
             if(xamlType == null || (userXamlType != null && userXamlType.IsReturnTypeStub && !userXamlType.IsLocalType))
             {
                 global::Windows.UI.Xaml.Markup.IXamlType libXamlType = CheckOtherMetadataProvidersForName(typeName);
@@ -153,14 +153,14 @@ namespace ObservableTest.Windows.ObservableTest_Windows_XamlTypeInfo
             _typeNameTable[1] = "Xamarin.Forms.Platform.WinRT.WindowsBasePage";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[3] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[4] = "ObservableTest.Windows.MainPage";
+            _typeNameTable[4] = "Cf.Windows.MainPage";
 
             _typeTable = new global::System.Type[5];
             _typeTable[0] = typeof(global::Xamarin.Forms.Platform.WinRT.WindowsPage);
             _typeTable[1] = typeof(global::Xamarin.Forms.Platform.WinRT.WindowsBasePage);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[3] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[4] = typeof(global::ObservableTest.Windows.MainPage);
+            _typeTable[4] = typeof(global::Cf.Windows.MainPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -196,12 +196,12 @@ namespace ObservableTest.Windows.ObservableTest_Windows_XamlTypeInfo
         }
 
         private object Activate_0_WindowsPage() { return new global::Xamarin.Forms.Platform.WinRT.WindowsPage(); }
-        private object Activate_4_MainPage() { return new global::ObservableTest.Windows.MainPage(); }
+        private object Activate_4_MainPage() { return new global::Cf.Windows.MainPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
-            global::ObservableTest.Windows.ObservableTest_Windows_XamlTypeInfo.XamlSystemBaseType xamlType = null;
-            global::ObservableTest.Windows.ObservableTest_Windows_XamlTypeInfo.XamlUserType userType;
+            global::Cf.Windows.Cf_Windows_XamlTypeInfo.XamlSystemBaseType xamlType = null;
+            global::Cf.Windows.Cf_Windows_XamlTypeInfo.XamlUserType userType;
             string typeName = _typeNameTable[typeIndex];
             global::System.Type type = _typeTable[typeIndex];
 
@@ -209,26 +209,26 @@ namespace ObservableTest.Windows.ObservableTest_Windows_XamlTypeInfo
             {
 
             case 0:   //  Xamarin.Forms.Platform.WinRT.WindowsPage
-                userType = new global::ObservableTest.Windows.ObservableTest_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Xamarin.Forms.Platform.WinRT.WindowsBasePage"));
+                userType = new global::Cf.Windows.Cf_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Xamarin.Forms.Platform.WinRT.WindowsBasePage"));
                 userType.Activator = Activate_0_WindowsPage;
                 xamlType = userType;
                 break;
 
             case 1:   //  Xamarin.Forms.Platform.WinRT.WindowsBasePage
-                userType = new global::ObservableTest.Windows.ObservableTest_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType = new global::Cf.Windows.Cf_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 xamlType = userType;
                 break;
 
             case 2:   //  Windows.UI.Xaml.Controls.Page
-                xamlType = new global::ObservableTest.Windows.ObservableTest_Windows_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                xamlType = new global::Cf.Windows.Cf_Windows_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
             case 3:   //  Windows.UI.Xaml.Controls.UserControl
-                xamlType = new global::ObservableTest.Windows.ObservableTest_Windows_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                xamlType = new global::Cf.Windows.Cf_Windows_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 4:   //  ObservableTest.Windows.MainPage
-                userType = new global::ObservableTest.Windows.ObservableTest_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Xamarin.Forms.Platform.WinRT.WindowsPage"));
+            case 4:   //  Cf.Windows.MainPage
+                userType = new global::Cf.Windows.Cf_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Xamarin.Forms.Platform.WinRT.WindowsPage"));
                 userType.Activator = Activate_4_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
@@ -296,7 +296,7 @@ namespace ObservableTest.Windows.ObservableTest_Windows_XamlTypeInfo
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
-            global::ObservableTest.Windows.ObservableTest_Windows_XamlTypeInfo.XamlMember xamlMember = null;
+            global::Cf.Windows.Cf_Windows_XamlTypeInfo.XamlMember xamlMember = null;
             // No Local Properties
             return xamlMember;
         }
@@ -353,9 +353,9 @@ namespace ObservableTest.Windows.ObservableTest_Windows_XamlTypeInfo
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks", "4.0.0.0")]    
     [System.Diagnostics.DebuggerNonUserCodeAttribute()]
-    internal class XamlUserType : global::ObservableTest.Windows.ObservableTest_Windows_XamlTypeInfo.XamlSystemBaseType
+    internal class XamlUserType : global::Cf.Windows.Cf_Windows_XamlTypeInfo.XamlSystemBaseType
     {
-        global::ObservableTest.Windows.ObservableTest_Windows_XamlTypeInfo.XamlTypeInfoProvider _provider;
+        global::Cf.Windows.Cf_Windows_XamlTypeInfo.XamlTypeInfoProvider _provider;
         global::Windows.UI.Xaml.Markup.IXamlType _baseType;
         bool _isArray;
         bool _isMarkupExtension;
@@ -369,7 +369,7 @@ namespace ObservableTest.Windows.ObservableTest_Windows_XamlTypeInfo
         global::System.Collections.Generic.Dictionary<string, string> _memberNames;
         global::System.Collections.Generic.Dictionary<string, object> _enumValues;
 
-        public XamlUserType(global::ObservableTest.Windows.ObservableTest_Windows_XamlTypeInfo.XamlTypeInfoProvider provider, string fullName, global::System.Type fullType, global::Windows.UI.Xaml.Markup.IXamlType baseType)
+        public XamlUserType(global::Cf.Windows.Cf_Windows_XamlTypeInfo.XamlTypeInfoProvider provider, string fullName, global::System.Type fullType, global::Windows.UI.Xaml.Markup.IXamlType baseType)
             :base(fullName, fullType)
         {
             _provider = provider;
@@ -562,7 +562,7 @@ namespace ObservableTest.Windows.ObservableTest_Windows_XamlTypeInfo
     [System.Diagnostics.DebuggerNonUserCodeAttribute()]
     internal class XamlMember : global::Windows.UI.Xaml.Markup.IXamlMember
     {
-        global::ObservableTest.Windows.ObservableTest_Windows_XamlTypeInfo.XamlTypeInfoProvider _provider;
+        global::Cf.Windows.Cf_Windows_XamlTypeInfo.XamlTypeInfoProvider _provider;
         string _name;
         bool _isAttachable;
         bool _isDependencyProperty;
@@ -571,7 +571,7 @@ namespace ObservableTest.Windows.ObservableTest_Windows_XamlTypeInfo
         string _typeName;
         string _targetTypeName;
 
-        public XamlMember(global::ObservableTest.Windows.ObservableTest_Windows_XamlTypeInfo.XamlTypeInfoProvider provider, string name, string typeName)
+        public XamlMember(global::Cf.Windows.Cf_Windows_XamlTypeInfo.XamlTypeInfoProvider provider, string name, string typeName)
         {
             _name = name;
             _typeName = typeName;

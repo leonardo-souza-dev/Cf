@@ -1,5 +1,5 @@
-﻿using ObservableTest.Data;
-using ObservableTest.Model;
+﻿using Cf.Data;
+using Cf.Model;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ObservableTest.ViewModel
+namespace Cf.ViewModel
 {
     public class UsuarioViewModel : INotifyPropertyChanged
     {

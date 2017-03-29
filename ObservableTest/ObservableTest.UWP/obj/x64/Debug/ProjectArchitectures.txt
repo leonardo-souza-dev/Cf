@@ -1,0 +1,2 @@
+C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTest\ObservableTest.UWP\Cf.UWP.csproj;x64
+C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTest\ObservableTest\Cf.csproj;neutral

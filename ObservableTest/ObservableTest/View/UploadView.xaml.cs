@@ -1,6 +1,6 @@
-﻿using ObservableTest.Model;
-using ObservableTest.Data;
-using ObservableTest.ViewModel;
+﻿using Cf.Model;
+using Cf.Data;
+using Cf.ViewModel;
 using Plugin.Media;
 using Plugin.Media.Abstractions;
 using System;
@@ -14,7 +14,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace ObservableTest.View
+namespace Cf.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class UploadView : ContentPage

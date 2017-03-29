@@ -9,7 +9,7 @@
   -->
   <Identity Name="277c7193-3404-4fbf-b556-45b4b5b49f29" Publisher="CN=leona" Version="1.0.0.0" ProcessorArchitecture="x64" />
   <Properties>
-    <DisplayName>ObservableTest.Windows</DisplayName>
+    <DisplayName>Cf.Windows</DisplayName>
     <PublisherDisplayName>leona</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
@@ -21,8 +21,8 @@
     <Resource Language="EN-US" />
   </Resources>
   <Applications>
-    <Application Id="App" Executable="ObservableTest.Windows.exe" EntryPoint="ObservableTest.Windows.App">
-      <m2:VisualElements DisplayName="ObservableTest.Windows" Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png" Description="ObservableTest.Windows" ForegroundText="light" BackgroundColor="#464646">
+    <Application Id="App" Executable="Cf.Windows.exe" EntryPoint="Cf.Windows.App">
+      <m2:VisualElements DisplayName="Cf.Windows" Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png" Description="ObservableTest.Windows" ForegroundText="light" BackgroundColor="#464646">
         <m2:DefaultTile Square70x70Logo="Assets\Square70x70Logo.png"></m2:DefaultTile>
         <m2:SplashScreen Image="Assets\SplashScreen.png" />
       </m2:VisualElements>

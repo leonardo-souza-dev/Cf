@@ -13,7 +13,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-namespace ObservableTest.UWP
+namespace Cf.UWP
 {
     public sealed partial class MainPage
     {
@@ -21,7 +21,7 @@ namespace ObservableTest.UWP
         {
             this.InitializeComponent();
 
-            LoadApplication(new ObservableTest.App());
+            LoadApplication(new Cf.App());
         }
     }
 }

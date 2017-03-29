@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ObservableTest.Model;
+using Cf.Model;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Net.Http.Headers;
@@ -13,7 +13,7 @@ using Newtonsoft.Json;
 using System.Text;
 using System.Diagnostics;
 
-namespace ObservableTest.Data
+namespace Cf.Data
 {
     public static class PostRepository
     {

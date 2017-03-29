@@ -8,7 +8,7 @@ using System.IO;
 using System.Reflection;
 using System.Runtime.Serialization;
 
-namespace ObservableTest.Model
+namespace Cf.Model
 {
     [DataContract]
     public class PostModel : INotifyPropertyChanged
