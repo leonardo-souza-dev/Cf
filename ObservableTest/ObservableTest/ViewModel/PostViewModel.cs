@@ -1,8 +1,10 @@
-﻿using ObservableTest.Model;
+﻿using ObservableTest.Data;
+using ObservableTest.Model;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,6 +25,28 @@ namespace ObservableTest.ViewModel
                 _posts = value;
                 OnPropertyChanged("Posts");
             }
+        }
+
+        public async Task<RespostaStatus> Salvar(PostModel post)
+            //Stream stream, string legenda, UsuarioModel usuario)
+        {
+            try
+            {
+                PostModel postSalvo = await PostRepository.SalvarPost(post);
+                postSalvo.Usuario = post.Usuario;
+                InserirPost(postSalvo);
+
+                return RespostaStatus.Sucesso;
+            }
+            catch (System.Exception)
+            {
+                return RespostaStatus.ErroGenerico;
+            }
+        }
+
+        public void InserirPost(PostModel post)
+        {
+            Posts.Insert(0, post);
         }
 
         //MOCK DE DADOS
@@ -49,7 +73,7 @@ namespace ObservableTest.ViewModel
             {
                 Legenda = "Esse é o cartão Sênior",
                 Usuario = App.UsuarioVM.Usuario,
-                FotoUrl = "http://www.blogcartaobom.com.br/wp-content/uploads/2015/01/senior-frente.png"
+                NomeArquivo = "cf_000016_1490758427312.jpg"
             };
 
             Posts.Add(post1);

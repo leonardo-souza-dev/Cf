@@ -29,9 +29,7 @@ namespace ObservableTest.Model
         public string AvatarUrl { get {
                 return App.Config.ObterUrlAvatar(nomeArquivoAvatar);
             }
-            //set { avatarUrl = value;OnPropertyChanged("AvatarUrl"); }
         }
-        //private string avatarUrl;
 
         [DataMember(Name = "nomeArquivoAvatar")]
         public string NomeArquivoAvatar { get { return nomeArquivoAvatar; } set { nomeArquivoAvatar = value; OnPropertyChanged("NomeArquivoAvatar"); OnPropertyChanged("AvatarUrl"); } }

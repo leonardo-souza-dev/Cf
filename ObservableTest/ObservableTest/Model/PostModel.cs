@@ -1,45 +1,63 @@
-﻿using System;
+﻿using SQLite;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.IO;
 using System.Reflection;
+using System.Runtime.Serialization;
 
 namespace ObservableTest.Model
 {
+    [DataContract]
     public class PostModel : INotifyPropertyChanged
     {
+        [DataMember(Name = "postId")]
+        public int ID { get; set; }
+
+        [DataMember(Name = "curtidas")]
+        public List<CurtidaModel> Curtidas { get; set; }
+
+        [DataMember(Name = "legenda")]
         public string Legenda { get; set; }
 
-        public UsuarioModel Usuario
-        {
-            get
-            {
-                return usuario;
-            }
-            set
-            {
-                usuario = value;
-                OnPropertyChanged("Usuario");
-            }
-        }
+        [DataMember(Name = "usuario")]
+        public UsuarioModel Usuario { get { return usuario; } set { usuario = value;OnPropertyChanged("Usuario");}}
         private UsuarioModel usuario;
 
-
-        public string FotoUrl
-        {
-            get
-            {
-                return fotoUrl;
-            }
-            set
-            {
-                fotoUrl = value;
-                OnPropertyChanged("FotoUrl");
+        [Ignore]
+        public string FotoUrl { get {
+                return App.Config.ObterUrlAvatar(nomeArquivo);
             }
         }
-        private string fotoUrl;
 
+        [DataMember(Name = "nomeArquivo")]
+        public string NomeArquivo { get { return nomeArquivo; } set { nomeArquivo = value; OnPropertyChanged("NomeArquivo"); OnPropertyChanged("FotoUrl"); } }
+        private string nomeArquivo;
+
+        public PostModel(Stream stream)
+        {
+            this.FotoStream = stream;
+            this.Curtidas = new List<CurtidaModel>();
+        }
+
+        public PostModel()
+        {
+
+        }
+
+        public byte[] ObterByteArrayFoto()
+        {
+            using (MemoryStream ms = new MemoryStream())
+            {
+                FotoStream.CopyTo(ms);
+                return ms.ToArray();
+            }
+        }
+
+        private Stream FotoStream { get; set; }
+        public bool CurtidaHabilitada { get; set; } = true;
 
         public event PropertyChangedEventHandler PropertyChanged;
         protected void OnPropertyChanged(string name) { PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name)); }
