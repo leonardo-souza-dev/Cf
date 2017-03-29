@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ObservableTest {
+namespace ObservableTest.View {
     using System;
     using Xamarin.Forms;
     using Xamarin.Forms.Xaml;

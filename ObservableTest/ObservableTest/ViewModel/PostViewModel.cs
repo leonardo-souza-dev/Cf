@@ -28,7 +28,6 @@ namespace ObservableTest.ViewModel
         }
 
         public async Task<RespostaStatus> Salvar(PostModel post)
-            //Stream stream, string legenda, UsuarioModel usuario)
         {
             try
             {

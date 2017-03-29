@@ -10,6 +10,7 @@ namespace ObservableTest.Model
 
         [DataMember]
         internal RespostaCurtida curtida;
+
     }
 
     [DataContract]

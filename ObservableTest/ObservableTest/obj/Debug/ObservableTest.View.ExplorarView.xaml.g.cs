@@ -8,20 +8,20 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ObservableTest {
+namespace ObservableTest.View {
     using System;
     using Xamarin.Forms;
     using Xamarin.Forms.Xaml;
     
     
-    public partial class MainPage : global::Xamarin.Forms.ContentPage {
+    public partial class ExplorarView : global::Xamarin.Forms.ContentPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.ListView lista;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
-            this.LoadFromXaml(typeof(MainPage));
+            this.LoadFromXaml(typeof(ExplorarView));
             lista = this.FindByName<global::Xamarin.Forms.ListView>("lista");
         }
     }
