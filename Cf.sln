@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cf.Android", "ObservableTest\ObservableTest.Android\Cf.Android.csproj", "{BD426C2C-9789-4036-A528-03904EDD5550}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cf.Android", "Cf\Cf.Android\Cf.Android.csproj", "{BD426C2C-9789-4036-A528-03904EDD5550}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cf", "ObservableTest\ObservableTest\Cf.csproj", "{EF5CB4F7-2D3E-4A66-81D7-05DD3855BBB9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cf", "Cf\Cf\Cf.csproj", "{EF5CB4F7-2D3E-4A66-81D7-05DD3855BBB9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cf.UWP", "ObservableTest\ObservableTest.UWP\Cf.UWP.csproj", "{955297C6-74FD-4B7B-AB78-0B69DD962807}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cf.UWP", "Cf\Cf.UWP\Cf.UWP.csproj", "{955297C6-74FD-4B7B-AB78-0B69DD962807}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cf.Windows", "ObservableTest\ObservableTest.Windows\Cf.Windows.csproj", "{D7005663-4C7B-47E9-8736-38A5ACFFBB99}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cf.Windows", "Cf\Cf.Windows\Cf.Windows.csproj", "{D7005663-4C7B-47E9-8736-38A5ACFFBB99}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

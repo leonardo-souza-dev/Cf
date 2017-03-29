@@ -1,2 +1,0 @@
-C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTest\ObservableTest.UWP\ObservableTest.UWP.csproj;x86
-C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\ObservableTest\ObservableTest\ObservableTest.csproj;neutral
