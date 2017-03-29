@@ -4,13 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Cf.Model;
-using System.Collections.Generic;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Runtime.Serialization.Json;
-using System.Threading.Tasks;
 using Newtonsoft.Json;
-using System.Text;
 using System.Diagnostics;
 
 namespace Cf.Data
@@ -49,7 +46,7 @@ namespace Cf.Data
         private static async Task<T> Resposta<T>(object conteudo, string metodo, bool ehDownload = false)
         {
             var httpClient = new HttpClient();
-            var uri = App.Config.ObterUrlBaseWebApi() + "api/" + metodo;
+            var uri = App.Config.ObterUrlBaseWebApi(metodo);
 
             if (conteudo != null)
             {
@@ -67,16 +64,30 @@ namespace Cf.Data
 
         public static async Task<PostModel> SalvarPost(PostModel post)
         {
-            //upload da foto
-            var urlUpload = App.Config.ObterUrlBaseWebApi("uploadfoto");
-            byte[] byteArray = post.ObterByteArrayFoto();
+            var httpRequest = new HttpClient();
+            string userJson = JsonConvert.SerializeObject(post);
+            var response = await httpRequest.PostAsync(App.Config.ObterUrlBaseWebApi("salvarpost"),
+                new StringContent(userJson, Encoding.UTF8, "application/json"));
 
+            var streamm = await response.Content.ReadAsStreamAsync();
+            var ser = new DataContractJsonSerializer(typeof(PostModel));
+            streamm.Position = 0;
+            var respostaUpload = (PostModel)ser.ReadObject(streamm);
+
+            var r = (PostModel)Objetos(respostaUpload);
+
+            return r;
+        }
+
+        public static async Task<RespostaUploadAvatar> UploadFoto(byte[] imagem, string sufixoImagem, string sufixoUsuarioId)
+        {
+            var urlUpload = App.Config.ObterUrlBaseWebApi("uploadfoto"); Objetos(urlUpload);/////////////
             var requestContent = new MultipartFormDataContent();
-            var imageContent = new ByteArrayContent(byteArray);
+            var imageContent = new ByteArrayContent(imagem);
             imageContent.Headers.ContentType = MediaTypeHeaderValue.Parse("image/jpeg");
-            requestContent.Add(imageContent, "cf", post.Usuario.ID.ToString().PadLeft(6, '0') + ".jpg");
-            requestContent.Add(new StringContent(post.Usuario.ID.ToString()), "usuarioId");
-
+            requestContent.Add(imageContent, "cf", sufixoImagem);
+            requestContent.Add(new StringContent(sufixoUsuarioId), "usuarioId");
+            Objetos(requestContent);/////////////////
             var client = new HttpClient();
             var response2 = await client.PostAsync(urlUpload, requestContent);
             var stream = await response2.Content.ReadAsStreamAsync();
@@ -84,26 +95,7 @@ namespace Cf.Data
             stream.Position = 0;
             var resposta = (RespostaUploadAvatar)ser.ReadObject(stream);
 
-            //PostModel postFinal = new PostModel() { Legenda = post.Legenda, NomeArquivo = resposta.nomeArquivo, UsuarioId = post.UsuarioId };
-            post.NomeArquivo = resposta.nomeArquivo;
-
-            //salva post
-            var httpRequest = new HttpClient();
-            //var json = JsonConvert.SerializeObject(post);
-            //var contentPost = new StringContent(json, Encoding.UTF8, "application/json");
-
-            string userJson = Newtonsoft.Json.JsonConvert.SerializeObject(post);
-            var response = await httpRequest.PostAsync(App.Config.ObterUrlBaseWebApi("salvarpost"),
-                new StringContent(userJson, System.Text.Encoding.UTF8, "application/json"));
-
-            var streamm = await response.Content.ReadAsStreamAsync();
-            var x = new DataContractJsonSerializer(typeof(PostModel));
-            streamm.Position = 0;
-            var respostaUpload = (PostModel)x.ReadObject(streamm);
-
-            var r = (PostModel)Objetos(respostaUpload);
-
-            return r;
+            return resposta;
         }
 
         public static object Objetos(object objectos)

@@ -103,9 +103,10 @@ namespace Cf.ViewModel
 
         public async Task<string> UploadAvatar(Stream stream)
         {
-            var sufixo = App.UsuarioVM.Usuario.ID.ToString().PadLeft(6, '0') + ".jpg";
+            var sufixoAvatar = App.UsuarioVM.Usuario.ID.ToString().PadLeft(6, '0') + ".jpg";
+            var sufixoUsuarioId = App.UsuarioVM.Usuario.ID.ToString();
 
-            var resposta = await UsuarioRepository.UploadAvatar(ReadFully(stream), sufixo);
+            var resposta = await UsuarioRepository.UploadAvatar(ReadFully(stream), sufixoAvatar, sufixoUsuarioId);
 
             return resposta.nomeArquivo;
         }

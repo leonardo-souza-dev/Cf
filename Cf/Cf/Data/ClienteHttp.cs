@@ -12,11 +12,11 @@ namespace Cf.Data
 {
     public class ClienteHttp
     {
-        public async Task<T> PostAsync<T>(string uri, object o)
+        public async Task<T> PostAsync<T>(string uri, object objeto)
         {
             var httpClient = new HttpClient();
 
-            var json = JsonConvert.SerializeObject(o);
+            var json = JsonConvert.SerializeObject(objeto);
             var contentPost = new StringContent(json, Encoding.UTF8, "application/json");
             var response = await httpClient.PostAsync(uri, contentPost);
             var stream = await response.Content.ReadAsStreamAsync();

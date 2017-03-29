@@ -27,17 +27,14 @@ namespace Cf.Data
             return t;
         }
 
-        public static async Task<RespostaUploadAvatar> UploadAvatar(byte[] imagem, string sufixo)
+        public static async Task<RespostaUploadAvatar> UploadAvatar(byte[] imagem, string sufixoAvatar, string sufixoUsuarioId)
         {
             var urlUpload = App.Config.ObterUrlBaseWebApi("uploadavatar");
-            //byte[] byteArray = imagem;
             var requestContent = new MultipartFormDataContent();
             var imageContent = new ByteArrayContent(imagem);
             imageContent.Headers.ContentType = MediaTypeHeaderValue.Parse("image/jpeg");
-            requestContent.Add(imageContent, "av", sufixo);
-            requestContent.Add(new StringContent(App.UsuarioVM.Usuario.ID.ToString()), "usuarioId");
-
-
+            requestContent.Add(imageContent, "av", sufixoAvatar);
+            requestContent.Add(new StringContent(sufixoUsuarioId), "usuarioId");
 
             var client = new HttpClient();
             var response = client.PostAsync(urlUpload, requestContent).Result;//upload da foto do usuario
