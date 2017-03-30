@@ -138,3 +138,11 @@ E:\Projects\!Xamarin\XamarinObservableTest\Cf\Cf.Windows\obj\x64\Debug\System.Ru
 E:\Projects\!Xamarin\XamarinObservableTest\Cf\Cf.Windows\obj\x64\Debug\System.Runtime.InteropServices.RuntimeInformation\pri.resfiles.intermediate
 E:\Projects\!Xamarin\XamarinObservableTest\Cf\Cf.Windows\obj\x64\Debug\System.Runtime.InteropServices.RuntimeInformation\priconfig.xml
 E:\Projects\!Xamarin\XamarinObservableTest\Cf\Cf.Windows\obj\x64\Debug\System.Runtime.InteropServices.RuntimeInformation\priconfig.xml.intermediate
+C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\Cf\Cf.Windows\obj\x64\Debug\System.Runtime.InteropServices.RuntimeInformation\layout.resfiles
+C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\Cf\Cf.Windows\obj\x64\Debug\System.Runtime.InteropServices.RuntimeInformation\layout.resfiles.intermediate
+C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\Cf\Cf.Windows\obj\x64\Debug\System.Runtime.InteropServices.RuntimeInformation\Resources.resfiles
+C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\Cf\Cf.Windows\obj\x64\Debug\System.Runtime.InteropServices.RuntimeInformation\Resources.resfiles.intermediate
+C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\Cf\Cf.Windows\obj\x64\Debug\System.Runtime.InteropServices.RuntimeInformation\pri.resfiles
+C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\Cf\Cf.Windows\obj\x64\Debug\System.Runtime.InteropServices.RuntimeInformation\pri.resfiles.intermediate
+C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\Cf\Cf.Windows\obj\x64\Debug\System.Runtime.InteropServices.RuntimeInformation\priconfig.xml
+C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\Cf\Cf.Windows\obj\x64\Debug\System.Runtime.InteropServices.RuntimeInformation\priconfig.xml.intermediate

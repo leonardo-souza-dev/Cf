@@ -129,47 +129,33 @@ namespace Cf.Data
 
         }
 
-        private static T UploadFotoSync<T>(PostModel post)
+        public static RespostaUploadAvatar UploadFotoSync(PostModel post, string[] sufixos)
         {
-            var requestContent = ObterRequestContent(post.ObterByteArrayFoto(),
-                                                     new string[]
-                                                     {
-                                                         post.Usuario.ID.ToString().PadLeft(6, '0') + ".jpg",
-                                                         post.Usuario.ID.ToString()
-                                                     });
+            var requestContent = ObterRequestContent(post.ObterByteArrayFoto(), sufixos);
 
-            var responseUpload = new HttpClient().PostAsync(App.Config.ObterUrlBaseWebApi("uploadfoto"), requestContent).Result;
+            var responseUpload = new HttpClient().PostAsync(App.Config.ObterUrlBaseWebApi("uploadfoto"), 
+                                                            requestContent).Result;
             var stream = responseUpload.Content.ReadAsStreamAsync().Result;
-            var objeto = ObterObjeto<T>(stream);
+            var objeto = ObterObjeto<RespostaUploadAvatar>(stream);
 
             return objeto;
         }
 
         public static async Task<PostModel> SalvarPost(PostModel post)
         {
-            var resposta = UploadFotoSync<RespostaUploadAvatar>(post);
-
-
-
-            post.NomeArquivo = resposta.nomeArquivo;
-
-            //salva post
             var httpRequest = new HttpClient();
-            //var json = JsonConvert.SerializeObject(post);
-            //var contentPost = new StringContent(json, Encoding.UTF8, "application/json");
-
-            string userJson = Newtonsoft.Json.JsonConvert.SerializeObject(post);
+            string json = JsonConvert.SerializeObject(post);
             var response = await httpRequest.PostAsync(App.Config.ObterUrlBaseWebApi("salvarpost"),
-                new StringContent(userJson, System.Text.Encoding.UTF8, "application/json"));
+                                                       new StringContent(json, Encoding.UTF8, "application/json"));
 
-            var streamm = await response.Content.ReadAsStreamAsync();
+            var stream = await response.Content.ReadAsStreamAsync();
             var x = new DataContractJsonSerializer(typeof(PostModel));
-            streamm.Position = 0;
-            var respostaUpload = (PostModel)x.ReadObject(streamm);
+            stream.Position = 0;
+            var respostaUpload = (PostModel)x.ReadObject(stream);
 
-            var r = (PostModel)Objetos(respostaUpload);
+            var resposta = (PostModel)Objetos(respostaUpload);
 
-            return r;
+            return resposta;
         }
 
         public static object Objetos(object objectos)

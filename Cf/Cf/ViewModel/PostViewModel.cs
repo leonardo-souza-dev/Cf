@@ -19,26 +19,17 @@ namespace Cf.ViewModel
 
         public async Task<RespostaStatus> Salvar(PostModel post)
         {
-            //////try
-            //////{
-            //////    var nomeFotoUploadada = PostRepository.UploadFoto(post.ObterByteArrayFoto(),
-            //////                                                          post.Usuario.ID.ToString().PadLeft(6, '0') + ".jpg",
-            //////                                                          post.Usuario.ID.ToString()).Result;
-            //////    post.NomeArquivo = nomeFotoUploadada.nomeArquivo;
-
-            //////    var postSalvo = await PostRepository.SalvarPost(post);
-            //////    postSalvo.Usuario = post.Usuario;
-            //////    InserirPost(postSalvo);
-
-            //////    return RespostaStatus.Sucesso;
-            //////}
-            //////catch (System.Exception)
-            //////{
-            //////    return RespostaStatus.ErroGenerico;
-            //////}
             try
             {
-                PostModel postSalvo = await PostRepository.SalvarPost(post);
+                var nomeFotoUploadada = PostRepository.UploadFotoSync(post,
+                                                                      new string[]
+                                                                      {
+                                                                          post.Usuario.ID.ToString().PadLeft(6, '0') + ".jpg",
+                                                                          post.Usuario.ID.ToString()
+                                                                      });
+                post.NomeArquivo = nomeFotoUploadada.nomeArquivo;
+
+                var postSalvo = await PostRepository.SalvarPost(post);
                 postSalvo.Usuario = post.Usuario;
                 InserirPost(postSalvo);
 
