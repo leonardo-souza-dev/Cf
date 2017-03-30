@@ -40,7 +40,7 @@
     </Compile>
     <Compile Include="Data\ClienteHttp.cs" />
     <Compile Include="Data\ISQLite.cs" />
-    <Compile Include="Data\ObservableTestDatabase.cs" />
+    <Compile Include="Data\CfDb.cs" />
     <Compile Include="Data\PostRepository.cs" />
     <Compile Include="Data\UsuarioRepository.cs" />
     <Compile Include="IFileHelper.cs" />

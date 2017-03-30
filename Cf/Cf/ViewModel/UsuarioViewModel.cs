@@ -55,6 +55,7 @@ namespace Cf.ViewModel
                 return ms.ToArray();
             }
         }
+
         public async Task<RespostaStatus> AtualizarCadastro(Stream stream)
         {
             try
@@ -73,7 +74,6 @@ namespace Cf.ViewModel
                     try
                     {
                         var usuarioAtualizado = await UsuarioRepository.Atualizar();
-                        //UsuarioModel usuarioAtualizado = new UsuarioModel() { ID = 1 };//MOCK
 
                         if (usuarioAtualizado.ID == -1 && !EditouAvatar)
                         {
@@ -109,6 +109,11 @@ namespace Cf.ViewModel
             var resposta = await UsuarioRepository.UploadAvatar(ReadFully(stream), sufixoAvatar, sufixoUsuarioId);
 
             return resposta.nomeArquivo;
+        }
+
+        public async Task<bool> TemConexaoComInternet()
+        {
+            return await UsuarioRepository.TesteConexao();
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

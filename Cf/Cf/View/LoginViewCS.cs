@@ -35,11 +35,12 @@ namespace Cf.View
             scroll.Content = ObterConteudo();
             Content = scroll;
 
+            TesteConexao();
+
             //temp
             EmailEntry.Text = "qwe";
             SenhaEntry.Text = "qwe";
 
-            //LoginBotao_Clicked(null, null);
         }
 
 
@@ -159,19 +160,20 @@ namespace Cf.View
             }
         }
 
-        //private void TesteConexao()
-        //{
-        //    var resposta = App.UsuarioVM.TesteConexao();
+        async void TesteConexao()
+        {
+            var temConexao = await App.UsuarioVM.TemConexaoComInternet();
 
-        //    if (resposta == RespostaStatus.Inexistente)
-        //    {
-        //        DisplayAlert("ops", "parece que nao tem internet", "volta lá");
-        //    }
+            if (!temConexao)
+            {
+                await DisplayAlert("ops", "parece que a internet tá com problema", "volta lá");
+            }
 
-        //}
+        }
 
         async void LoginBotao_Clicked(object sender, EventArgs e)
         {
+            LoginButton.IsEnabled = false;
             //TesteConexao();
 
             ValidaEntradas();
@@ -180,6 +182,8 @@ namespace Cf.View
             string senha = SenhaEntry.Text;
 
             App.UsuarioVM.Usuario = await App.UsuarioVM.Login(email, senha);
+
+            LoginButton.IsEnabled = true;
 
             if (App.UsuarioVM.Usuario.ID > 0)
             {

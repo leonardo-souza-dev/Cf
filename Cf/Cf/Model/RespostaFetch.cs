@@ -6,6 +6,6 @@ namespace Cf.Model
     public class RespostaFetch
     {
         [DataMember]
-        internal int status;
+        internal string status;
     }
 }

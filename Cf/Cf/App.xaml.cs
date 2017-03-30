@@ -10,7 +10,7 @@ namespace Cf
 {
     public partial class App : Application
     {
-        static ObservableTestDatabase database;
+        static CfDb database;
 
         public static PostViewModel PostVM { get; set; }
         public static UsuarioViewModel UsuarioVM { get; set; }
@@ -23,21 +23,19 @@ namespace Cf
 
             Config = new ConfiguracaoApp();
 
-
             UsuarioVM = new UsuarioViewModel();
             PostVM = new PostViewModel();
-
             MainPage = new LoginViewCS();
         }
 
-        public static ObservableTestDatabase Database
+        public static CfDb Database
         {
             get
             {
                 if (database == null)
                 {
-                    var path = DependencyService.Get<IFileHelper>().GetLocalFilePath("ObservableTestSQLite.db3");
-                    database = new ObservableTestDatabase(path);
+                    var path = DependencyService.Get<IFileHelper>().GetLocalFilePath("CfDbSQLite.db3");
+                    database = new CfDb(path);
                 }
                 return database;
             }

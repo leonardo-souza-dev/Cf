@@ -34,11 +34,11 @@
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\Cf\Cf.Windows\bin\x64\Debug\Cf.Windows.exe">
       <PackagePath>Cf.Windows.exe</PackagePath>
-      <Modified>2017-03-30T17:02:00.735</Modified>
+      <Modified>2017-03-30T21:01:24.714</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\Cf\Cf\bin\Debug\Cf.dll">
       <PackagePath>Cf.dll</PackagePath>
-      <Modified>2017-03-30T17:01:58.990</Modified>
+      <Modified>2017-03-30T21:01:24.225</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\packages\Xam.Plugin.Media.2.6.2\lib\win8\Plugin.Media.Abstractions.dll">
       <PackagePath>Plugin.Media.Abstractions.dll</PackagePath>
@@ -171,7 +171,7 @@
     <AppxPackagedFile Include="C:\Users\leona\Documents\!Stuff\coisas\ProjetosOrganizar\ObservableTest\Cf\Cf.Windows\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-03-30T17:02:03.183</Modified>
+      <Modified>2017-03-30T21:01:25.332</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

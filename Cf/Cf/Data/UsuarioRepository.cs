@@ -4,27 +4,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Cf.Model;
-using System.Collections.Generic;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Runtime.Serialization.Json;
-using System.Threading.Tasks;
 using Newtonsoft.Json;
-using System.Text;
 
 namespace Cf.Data
 {
     public static class UsuarioRepository
     {
-        public static async Task<RespostaFetch> TesteConexao()
+        public static async Task<bool> TesteConexao()
         {
-            var httpClient = new HttpClient();
-            var response = await httpClient.GetAsync(App.Config.ObterUrlBaseWebApi() + "fetch");
-            var stream = await response.Content.ReadAsStreamAsync();
-            var ser = new DataContractJsonSerializer(typeof(RespostaFetch));
-            stream.Position = 0;
-            RespostaFetch t = (RespostaFetch)ser.ReadObject(stream);
-            return t;
+            try
+            {
+                var response = await new HttpClient().GetAsync(App.Config.ObterUrlBaseWebApi() + "fetch");
+
+                if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                    return true;
+                else
+                    return false;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
         }
 
         public static async Task<RespostaUploadAvatar> UploadAvatar(byte[] imagem, string sufixoAvatar, string sufixoUsuarioId)
@@ -84,18 +87,25 @@ namespace Cf.Data
 
         private static async Task<T> Resposta<T>(object conteudo, string metodo, bool ehDownload = false)
         {
-            var httpClient = new HttpClient();
-            var json = JsonConvert.SerializeObject(conteudo);
-            var contentPost = new StringContent(json, Encoding.UTF8, "application/json");
-            var response = await httpClient.PostAsync(UrlBase(metodo), contentPost);
-            var stream = await response.Content.ReadAsStreamAsync();
-            var ser = new DataContractJsonSerializer(typeof(T));
-            stream.Position = 0;
-            T t = (T)ser.ReadObject(stream);
+            try
+            {
+                var httpClient = new HttpClient();
+                var json = JsonConvert.SerializeObject(conteudo);
+                var contentPost = new StringContent(json, Encoding.UTF8, "application/json");
+                var response = await httpClient.PostAsync(UrlBase(metodo), contentPost);
+                var r = Objetos(response);
+                var stream = await response.Content.ReadAsStreamAsync();
+                var ser = new DataContractJsonSerializer(typeof(T));
+                stream.Position = 0;
+                T t = (T)ser.ReadObject(stream);
 
-            var t2 = Objetos(t);
-
-            return t;
+                var t2 = Objetos(t);
+                return t;
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
         }
 
         public static object Objetos(object objectos)

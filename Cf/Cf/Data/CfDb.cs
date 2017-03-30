@@ -5,11 +5,11 @@ using System.Threading.Tasks;
 
 namespace Cf.Data
 {
-    public class ObservableTestDatabase
+    public class CfDb
     {
         readonly SQLiteAsyncConnection database;
 
-        public ObservableTestDatabase(string dbPath)
+        public CfDb(string dbPath)
         {
             database = new SQLiteAsyncConnection(dbPath);
             database.CreateTableAsync<UsuarioModel>().Wait();
